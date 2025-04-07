@@ -1,0 +1,13 @@
+---
+export interface Props {
+  word: string;
+}
+const { word } = Astro.props;
+---
+
+<section class="mb-6">
+  <h2 class="text-xl font-bold">{word}</h2>
+  <p class="text-gray-700">
+    <slot />
+  </p>
+</section>
